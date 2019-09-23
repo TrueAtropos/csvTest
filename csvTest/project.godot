@@ -1,0 +1,29 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="csvTest"
+run/main_scene="res://Main.tscn"
+config/icon="res://icon.png"
+
+[locale]
+
+translations=PoolStringArray( "res://text1.en.translation", "res://text1.ru.translation" )
+locale_filter=[ 0, [ "en", "ru" ] ]
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

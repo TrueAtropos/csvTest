@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://DebugMod.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/Theme.theme" type="Theme" id=2]
+
+[node name="DBG" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="Debug" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 2 )
+custom_constants/margin_right = 11
+custom_constants/margin_top = 11
+custom_constants/margin_left = 11
+custom_constants/margin_bottom = 11
+
+[node name="HBox" type="HBoxContainer" parent="Debug"]
+margin_left = 11.0
+margin_top = 11.0
+margin_right = 1013.0
+margin_bottom = 589.0
+
+[node name="VBox" type="VBoxContainer" parent="Debug/HBox"]
+margin_right = 39.0
+margin_bottom = 578.0
+
+[node name="L0" type="Label" parent="Debug/HBox/VBox"]
+margin_right = 39.0
+margin_bottom = 28.0
+text = "text"
+
+[node name="L1" type="Label" parent="Debug/HBox/VBox"]
+margin_top = 32.0
+margin_right = 39.0
+margin_bottom = 60.0
+text = "text"
+
+[node name="L2" type="Label" parent="Debug/HBox/VBox"]
+margin_top = 64.0
+margin_right = 39.0
+margin_bottom = 92.0
+text = "text"
